@@ -19,3 +19,7 @@ use Illuminate\Support\Facades\Route;
 // route to project api 
 
 Route::get('/projects', [ProjectController::class, 'index']);
+
+//rotta per il dettaglio del project
+
+Route::get('/projects/{project}', [ProjectController::class, 'show']);
